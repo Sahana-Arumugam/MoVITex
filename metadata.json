@@ -1,0 +1,7 @@
+{
+  "name": "MoVITex",
+  "description": "AI-powered campus crowd movement visualization and energy optimization dashboard.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
