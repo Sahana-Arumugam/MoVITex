@@ -256,7 +256,7 @@ export const QualityScore: React.FC = () => {
             { 
               title: 'Load Balancing', 
               impact: 'High', 
-              action: 'Redistribute 150 students from Library to Science Block A.',
+              action: 'Redistribute 150 students from Main Library to SMV Block.',
               icon: Activity
             },
             { 
@@ -268,7 +268,7 @@ export const QualityScore: React.FC = () => {
             { 
               title: 'Space Recovery', 
               impact: 'High', 
-              action: 'Unused lab space in Engineering Hall converted to study zone.',
+              action: 'Unused lab space in TT Block converted to study zone.',
               icon: Layout
             },
           ].map((strategy, i) => (

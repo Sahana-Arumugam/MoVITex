@@ -45,10 +45,10 @@ export const CrowdView: React.FC = () => {
   };
 
   const barData = {
-    labels: ['Library', 'Science', 'Eng', 'Union', 'Gym', 'Cafe'],
+    labels: ['Main Library', 'SMV Block', 'TT Block', 'Mess D', 'Mess E', 'Mess G', 'Mess H', 'GDN Block', 'Foodys'],
     datasets: [{
       label: 'Current Occupancy',
-      data: [450, 820, 310, 950, 210, 150],
+      data: [450, 820, 310, 950, 850, 920, 880, 210, 150],
       backgroundColor: 'rgba(16, 185, 129, 0.5)',
       borderRadius: 4,
     }]

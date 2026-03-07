@@ -71,7 +71,7 @@ export const LiveMap: React.FC = () => {
             </div>
 
             <div className="mt-4 pt-4 border-t border-white/5">
-              <p className="text-[10px] text-white/30 italic">AI Suggestion: Redirect traffic from Student Union to Engineering Block for optimal flow.</p>
+              <p className="text-[10px] text-white/30 italic">AI Suggestion: Redirect traffic from Mess D to SMV Block for optimal flow.</p>
             </div>
           </div>
         </motion.div>

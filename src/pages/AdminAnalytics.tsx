@@ -26,11 +26,18 @@ const peakHoursData = [
 ];
 
 const buildingCongestionData = [
-  { name: 'Library Central', occupancy: 92, status: 'critical' },
-  { name: 'Student Union', occupancy: 85, status: 'warning' },
-  { name: 'Science Block A', occupancy: 78, status: 'warning' },
-  { name: 'Engineering Hall', occupancy: 65, status: 'optimal' },
-  { name: 'Arts Pavilion', occupancy: 45, status: 'optimal' },
+  { name: 'Main Library', occupancy: 92, status: 'critical' },
+  { name: 'Mess D', occupancy: 85, status: 'warning' },
+  { name: 'Mess E', occupancy: 72, status: 'warning' },
+  { name: 'Mess G', occupancy: 88, status: 'critical' },
+  { name: 'Mess H', occupancy: 80, status: 'warning' },
+  { name: 'Mess S', occupancy: 68, status: 'optimal' },
+  { name: 'Mess T', occupancy: 82, status: 'warning' },
+  { name: 'Mess P', occupancy: 75, status: 'warning' },
+  { name: 'Mess M', occupancy: 79, status: 'warning' },
+  { name: 'SMV Block', occupancy: 78, status: 'warning' },
+  { name: 'TT Block', occupancy: 65, status: 'optimal' },
+  { name: 'Foodys', occupancy: 45, status: 'optimal' },
 ];
 
 const dailyTrendData = [
@@ -44,9 +51,9 @@ const dailyTrendData = [
 ];
 
 const underutilizedSpaces = [
-  { name: 'North Garden Cafe', occupancy: 12, capacity: 150 },
-  { name: 'West Wing Lounge', occupancy: 8, capacity: 80 },
-  { name: 'Innovation Hub B', occupancy: 15, capacity: 120 },
+  { name: 'Shuttle Stop Main Gate', occupancy: 12, capacity: 150 },
+  { name: 'Cafeteria SJT Nescafe', occupancy: 8, capacity: 80 },
+  { name: 'PRP Block', occupancy: 15, capacity: 120 },
 ];
 
 const CustomTooltip = ({ active, payload, label }: any) => {

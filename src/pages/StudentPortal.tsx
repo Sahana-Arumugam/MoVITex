@@ -1,33 +1,42 @@
 import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
-import { Map as MapIcon, Navigation, Brain, Bell } from 'lucide-react';
+import {
+  Navigation,
+  Brain,
+  Bell,
+  TrendingUp,
+  Clock,
+} from 'lucide-react';
 import { PortalLayout, NavItem } from '../components/layout/PortalLayout';
-import { LiveMap } from './LiveMap';
 import { SmartRouteFinder } from './SmartRouteFinder';
 import { StudentIntelligence } from './StudentIntelligence';
 import { NotificationsPanel } from './NotificationsPanel';
+import { PredictCongestion } from './PredictCongestion';
+import { BestTimeToVisit } from './BestTimeToVisit';
 
 const studentNavItems: NavItem[] = [
-  { id: 'map', icon: MapIcon, label: 'Live Campus Map', path: '/student/map' },
+  { id: 'predict', icon: TrendingUp, label: 'Predict Congestion', path: '/student/predict' },
+  { id: 'insights', icon: Brain, label: 'Block & Time Insights', path: '/student/insights' },
   { id: 'route', icon: Navigation, label: 'Smart Route Finder', path: '/student/route' },
-  { id: 'insights', icon: Brain, label: 'Crowd Insights', path: '/student/insights' },
-  { id: 'alerts', icon: Bell, label: 'Notifications', path: '/student/alerts' },
+  { id: 'best-time', icon: Clock, label: 'Best Time to Visit', path: '/student/best-time' },
+  { id: 'alerts', icon: Bell, label: 'Smart Alerts', path: '/student/alerts' },
 ];
 
 export const StudentPortal: React.FC = () => {
   return (
-    <PortalLayout 
-      navItems={studentNavItems} 
+    <PortalLayout
+      navItems={studentNavItems}
       role="student"
       userName="Alex Student"
       userRole="Undergraduate"
     >
       <Routes>
-        <Route path="map" element={<LiveMap />} />
-        <Route path="route" element={<SmartRouteFinder />} />
+        <Route path="predict" element={<PredictCongestion />} />
         <Route path="insights" element={<StudentIntelligence />} />
+        <Route path="route" element={<SmartRouteFinder />} />
+        <Route path="best-time" element={<BestTimeToVisit />} />
         <Route path="alerts" element={<NotificationsPanel />} />
-        <Route path="*" element={<Navigate to="map" replace />} />
+        <Route path="*" element={<Navigate to="insights" replace />} />
       </Routes>
     </PortalLayout>
   );

@@ -38,9 +38,9 @@ export const StudentIntelligence: React.FC = () => {
 
   // Navigation suggestions
   const navSuggestions = [
-    { from: 'Library', to: 'Cafeteria', time: '4 min', type: 'Fastest' },
-    { from: 'Science Block', to: 'Main Gate', time: '6 min', type: 'Low Crowd' },
-    { from: 'Engineering', to: 'Gym', time: '3 min', type: 'Fastest' }
+    { from: 'Main Library', to: 'Foodys', time: '4 min', type: 'Fastest' },
+    { from: 'SMV Block', to: 'Shuttle Stop Main Gate', time: '6 min', type: 'Low Crowd' },
+    { from: 'TT Block', to: 'Mess D', time: '3 min', type: 'Fastest' }
   ];
 
   const chartData = {

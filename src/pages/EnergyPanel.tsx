@@ -20,12 +20,19 @@ import { motion } from 'motion/react';
 
 // Logic: energyUsage = baseEnergy + (crowdLevel × energyMultiplier)
 const buildings = [
-  { id: 'lib', name: 'Library Central', baseEnergy: 450, crowdLevel: 92, multiplier: 4.2, capacity: 1000 },
-  { id: 'stu', name: 'Student Union', baseEnergy: 300, crowdLevel: 85, multiplier: 3.8, capacity: 800 },
-  { id: 'sci', name: 'Science Block A', baseEnergy: 600, crowdLevel: 45, multiplier: 5.5, capacity: 1200 },
-  { id: 'eng', name: 'Engineering Hall', baseEnergy: 550, crowdLevel: 65, multiplier: 4.8, capacity: 1500 },
-  { id: 'art', name: 'Arts Pavilion', baseEnergy: 200, crowdLevel: 30, multiplier: 2.5, capacity: 500 },
-  { id: 'gym', name: 'Campus Gym', baseEnergy: 400, crowdLevel: 78, multiplier: 4.0, capacity: 600 },
+  { id: 'lib', name: 'Main Library', baseEnergy: 450, crowdLevel: 92, multiplier: 4.2, capacity: 1000 },
+  { id: 'mess_d', name: 'Mess D', baseEnergy: 300, crowdLevel: 85, multiplier: 3.8, capacity: 800 },
+  { id: 'mess_e', name: 'Mess E', baseEnergy: 280, crowdLevel: 72, multiplier: 3.6, capacity: 750 },
+  { id: 'mess_g', name: 'Mess G', baseEnergy: 310, crowdLevel: 88, multiplier: 3.9, capacity: 850 },
+  { id: 'mess_h', name: 'Mess H', baseEnergy: 290, crowdLevel: 80, multiplier: 3.7, capacity: 800 },
+  { id: 'mess_s', name: 'Mess S', baseEnergy: 270, crowdLevel: 68, multiplier: 3.5, capacity: 700 },
+  { id: 'mess_t', name: 'Mess T', baseEnergy: 300, crowdLevel: 82, multiplier: 3.8, capacity: 820 },
+  { id: 'mess_p', name: 'Mess P', baseEnergy: 285, crowdLevel: 75, multiplier: 3.6, capacity: 770 },
+  { id: 'mess_m', name: 'Mess M', baseEnergy: 295, crowdLevel: 79, multiplier: 3.7, capacity: 800 },
+  { id: 'smv', name: 'SMV Block', baseEnergy: 600, crowdLevel: 45, multiplier: 5.5, capacity: 1200 },
+  { id: 'tt', name: 'TT Block', baseEnergy: 550, crowdLevel: 65, multiplier: 4.8, capacity: 1500 },
+  { id: 'gdn', name: 'GDN Block', baseEnergy: 200, crowdLevel: 30, multiplier: 2.5, capacity: 500 },
+  { id: 'food', name: 'Foodys', baseEnergy: 400, crowdLevel: 78, multiplier: 4.0, capacity: 600 },
 ];
 
 const buildingData = buildings.map(b => {
@@ -275,7 +282,7 @@ export const EnergyPanel: React.FC = () => {
               <h4 className="text-sm font-bold text-white/90">Eco-Tip</h4>
             </div>
             <p className="text-xs text-white/50">
-              Science Block A is at 45% capacity. Activating "Zone Sleep Mode" for unoccupied labs could save <span className="text-blue-400 font-bold">12kW/h</span>.
+              SMV Block is at 45% capacity. Activating "Zone Sleep Mode" for unoccupied labs could save <span className="text-blue-400 font-bold">12kW/h</span>.
             </p>
             <button className="mt-auto py-2 rounded-xl border border-blue-500/30 text-blue-400 text-xs font-bold hover:bg-blue-500/10 transition-colors">
               ACTIVATE ECO MODE
